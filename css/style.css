@@ -12,5 +12,101 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: fixed;
+    width: 100%;
+}
+.developertext{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 0.75em;
+  font-style: italic;
+  text-align: center;
+  color: white;
+}
+.nametext{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 2.75em;
+  text-align: center;
+  color: white;
+  padding-top:25%;
+}
+.firstpage{
+  top: 100%;
+  width: 100%;
+  background-color: #C63D0F;
+  position: relative;
+  height:100%;
+}
 
+.roundimages{
+  padding-top: 1%;
+  height:128px;
+}
+.firstpagecontainer{
+      padding-top: 1%;
+}
+.sidebarleft{
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  margin-left: 10%;
+  background-color: #FDF3E7;
+}
+.sidebarright{
+  right: 0px;
+  top: 0px;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  margin-right: 10%;
+  background-color: #FDF3E7;
+}
+.links{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 2.75em;
+  text-align: center;
+  color: #3B3738;
+}
+.links:hover{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 2.75em;
+  text-align: center;
+  color: #3B3738;
+  text-decoration: none;
+}
+.links:hover > div{
+  background-color: #FDF3E7;
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+    from {background-color: #C63D0F;}
+    to {background-color: #FDF3E7;}
+}
+.skills{
+  margin-top:5%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+  text-align: center;
+  color: #FDF3E7;
+}
+.skillheading{
+  margin-top:5%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  text-align: center;
+  color: #FDF3E7;
+}
+.skill{
+  margin-top:5%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: center;
+  color: #FDF3E7;
 }
