@@ -38,6 +38,13 @@ body, html {
   position: relative;
   height:100%;
 }
+.firstpage1{
+  top: 200%;
+  width: 100%;
+  background-color: #C63D0F;
+  position: relative;
+  height:100%;
+}
 
 .roundimages{
   padding-top: 1%;
@@ -46,21 +53,23 @@ body, html {
 .firstpagecontainer{
       padding-top: 1%;
 }
-.sidebarleft{
-  width: 10px;
-  height: 100%;
-  position: absolute;
-  margin-left: 10%;
-  background-color: #FDF3E7;
-}
-.sidebarright{
-  right: 0px;
-  top: 0px;
-  width: 10px;
-  height: 100%;
-  position: absolute;
-  margin-right: 10%;
-  background-color: #FDF3E7;
+@media screen and (min-width: 700px) {
+  .sidebarleft{
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    margin-left: 10%;
+    background-color: #FDF3E7;
+  }
+  .sidebarright{
+    right: 0px;
+    top: 0px;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    margin-right: 10%;
+    background-color: #FDF3E7;
+  }
 }
 .links{
   font-family: 'Open Sans', sans-serif;
@@ -101,12 +110,36 @@ body, html {
   font-size: 1.5em;
   text-align: center;
   color: #FDF3E7;
+  border-right: 2px solid #3B3738;
+  border-left: 2px solid #F2F4F3;
 }
 .skill{
-  margin-top:5%;
+  margin-top:2%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   font-size: 1em;
   text-align: center;
   color: #FDF3E7;
+  border-left: 2px solid #3B3738;
+  border-right: 2px solid #F2F4F3;
+}
+.hackathons{
+  margin-top:3%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: center;
+  color: #FDF3E7;
+  border-left: 2px solid #F2F4F3;
+  border-right: 2px solid #3B3738;
+}
+.roundimg{
+  width:100px;
+  height:100px;
+  background-color: white;
+  border: 1px solid #F2F4F3;
+  border-radius: 100%;
+}
+.backgroundcolor{
+  background-color: #C63D0F;
 }
