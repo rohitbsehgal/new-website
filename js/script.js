@@ -1,4 +1,4 @@
-var divs = ['.stickyBanner', '.stickyBanner1', '.stickyBanner2','.stickyBanner3', '.stickyBanner4', '.stickyBanner5', '.stickyBanner6'];
+var divs = ['.stickyBanner', '.stickyBanner1', '.stickyBanner2'];
 var distance = $('.stickyBanner').offset().top, $window = $(window);
 var height = $('.stickyBanner').height();
 var distance1 = $('.stickyBanner1').offset().top, $window = $(window);
