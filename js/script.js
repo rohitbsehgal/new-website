@@ -7,14 +7,15 @@ var i = 0;
 var x = 0;
 var height2 = height;
 var bottoms = [];
-if($window.width() <= 575){
-for(var j = 0; j< divs.length; j++){
-  var bottom = $(divs[j]).height();
-  bottoms.push(bottom);
-}
-}
-$window.scroll(function() {
+// if($window.width() <= 575){
+// for(var j = 0; j< divs.length; j++){
+//   var bottom = $(divs[j]).height();
+//   bottoms.push(bottom);
+// }
+// }
   if($window.width() > 575){
+$window.scroll(function() {
+
     height = $(divs[i]).height();
     var top = $window.scrollTop() ;
     var windowHeight = $(window).height();
@@ -27,7 +28,6 @@ $window.scroll(function() {
     }else{
       $(divs[i]).css({position: "relative", top: (i+1) + "00%"});
     }
-  }
 //   else{
 //     height = $(divs[i]).height();
 //     var top = $("body").scrollTop();
@@ -52,3 +52,4 @@ $window.scroll(function() {
 //     }
 // }
 });
+  }
