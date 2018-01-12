@@ -27,27 +27,28 @@ $window.scroll(function() {
     }else{
       $(divs[i]).css({position: "relative", top: (i+1) + "00%"});
     }
-  }else{
-    height = $(divs[i]).height();
-    var top = $("body").scrollTop();
-    console.log(top);
-    console.log(height);
-    console.log(i);
-    var windowHeight = $(window).height();
-    if(top >= height  && i < divs.length-1){
-      $(divs[i]).css({position: "fixed", bottom: "0px", top: "auto"});
-      console.log("first");
-      top = 0;
-      i++;
-      window.scrollTo(0, 10);
-    }else if(i >= 1 && top <= 0 ){
-      console.log("second");
-      $(divs[i]).css({position: "relative", top: "100%", bottom: "auto"});
-      i--;
-      window.scrollTo(0, bottoms[i] - 10);
-
-    }else{
-      $(divs[i]).css({position: "relative", top: "100%", bottom: "auto"});
-    }
   }
+//   else{
+//     height = $(divs[i]).height();
+//     var top = $("body").scrollTop();
+//     console.log(top);
+//     console.log(height);
+//     console.log(i);
+//     var windowHeight = $(window).height();
+//     if(top >= height  && i < divs.length-1){
+//       $(divs[i]).css({position: "fixed", bottom: "0px", top: "auto"});
+//       console.log("first");
+//       top = 0;
+//       i++;
+//       window.scrollTo(0, 10);
+//     }else if(i >= 1 && top <= 0 ){
+//       console.log("second");
+//       $(divs[i]).css({position: "relative", top: "100%", bottom: "auto"});
+//       i--;
+//       window.scrollTo(0, bottoms[i] - 10);
+//
+//     }else{
+//       $(divs[i]).css({position: "relative", top: "100%", bottom: "auto"});
+//     }
+// }
 });
